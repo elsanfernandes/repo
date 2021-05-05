@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "4303f56f-21f2-4fb5-916a-9fb7451c11d5",
+		"name": "SOA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "order-service",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "payment-service",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "payment-service-getorder",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "gateway-book-order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"order\" : { \r\n        \"id\":111,\r\n        \"name\":\"Action\",\r\n        \"qty\":2,\r\n        \"price\":101\r\n   },\r\n   \"payment\" : {}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://192.168.0.149:9190/order/bookOrder"
+			},
+			"response": []
+		},
+		{
+			"name": "gateway-get-order",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
